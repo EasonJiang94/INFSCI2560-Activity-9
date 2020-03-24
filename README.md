@@ -1,4 +1,4 @@
-CRUD Application Example
+# INFSCI2560 Activity 10 - CRUDY 
 
 Uses Express.js and Mongoose to connect to a [Mongo Atlas](https://www.mongodb.com/cloud/atlas) database.
 

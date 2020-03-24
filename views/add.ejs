@@ -17,16 +17,24 @@
     <form action="/api/book" method="POST">
       <div class="form-group">
         <label for="title">Title:</label>
-        <input type="text" name="title" class="form-control"/>
+        <input type="text" 
+               name="title" 
+               class="form-control" 
+               placeholder="Enter book title here"
+               required/>
       </div>
       
       <div class="form-group">
         <label for="author">Author:</label>
-        <input name="author" type="text"/>
+        <input name="author" 
+               type="text" 
+               class="form-control" 
+               placeholder="Enter book author here"/
+               required>
       </div>
       
       <br/>
-      <input type="submit" value="Add Book"/>
+      <button type="submit" class="btn btn-primary">Add Book</button>
     </form>
     <!-- include the Glitch button to show what the webpage is about and
 to make it easier for folks to view source and remix -->
