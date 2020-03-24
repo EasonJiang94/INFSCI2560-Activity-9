@@ -11,8 +11,6 @@ router.get("/", function(req,res){
     res.render("index", {books:book_list});
   });
 });
-router.get("/add", function(req,res){
-  res.render("add")
-});
+
 
 module.exports = router;
