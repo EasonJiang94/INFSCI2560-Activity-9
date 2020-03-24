@@ -8,8 +8,11 @@ This is a Glitch adaptation of the [building a restful api with express and mong
 
 
 ## Steps
-1. Create a free account on [https://cloud.mongodb.com](https://cloud.mongodb.com)
-2. Once you are logged in, create a Project
+This activity will roughly follow the [Getting Started with Atlas](https://docs.atlas.mongodb.com/getting-started/) guide to create a cloud hosted MongoDB database.
+
+1. Create a free account on [MongoDB Atlas](https://cloud.mongodb.com)
+2. Once you have loggged in 
+
 
 
 
