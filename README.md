@@ -8,10 +8,15 @@ This is a Glitch adaptation of the [building a restful api with express and mong
 
 
 ## Steps
-This activity will roughly follow the [Getting Started with Atlas](https://docs.atlas.mongodb.com/getting-started/) guide to create a cloud hosted MongoDB database.
 
-1. Create a free account on [MongoDB Atlas](https://cloud.mongodb.com)
-2. Once you have loggged in 
+Follow the [Getting Started with Atlas](https://docs.atlas.mongodb.com/getting-started/) guide to create a cloud hosted MongoDB database. 
+
+* In the [Whitelist Your Connection IP Address](https://docs.atlas.mongodb.com/tutorial/whitelist-connection-ip-address/) section of the tutorial, you should enter `0.0.0.0/0`. DON'T FORGET THE `/0`!!
+* Write down the us
+
+
+
+
 
 
 
