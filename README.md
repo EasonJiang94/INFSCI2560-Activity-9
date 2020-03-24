@@ -1,8 +1,18 @@
-# INFSCI2560 Activity 10 - CRUDY 
+# INFSCI2560 Activity 9
 
-Uses Express.js and Mongoose to connect to a [Mongo Atlas](https://www.mongodb.com/cloud/atlas) database.
+Use Express.js and Mongoose to connect to a [Mongo Atlas](https://www.mongodb.com/cloud/atlas) database.
 
 This is a Glitch adaptation of the [building a restful api with express and mongodb](https://dev.to/aurelkurtula/building-a-restful-api-with-express-and-mongodb--3mmh) tutorial on Dev.to.
+
+
+
+
+## Steps
+1. Create a free account on [https://cloud.mongodb.com](https://cloud.mongodb.com)
+2. Once you are logged in, create a Project
+
+
+
 
 
 
