@@ -5,7 +5,7 @@ Connect this application to a MongoDB instance and then use [Postman](https://ww
 
 ## Steps
 
-Create a MongoDB instance in the cloud. Visit Mongo Atlas](https://www.mongodb.com/cloud/atlas) and create an account.
+Create a MongoDB instance in the cloud. Visit [Mongo Atlas](https://www.mongodb.com/cloud/atlas) and create an account.
   * Visit the [MongoDB Atlas Instructions](https://canvas.pitt.edu/courses/16763/pages/mongodb-atlas-instructions) page on Canvas for a step by step guide.
   * If you like videos, check out this [YouTube tutorial](https://www.youtube.com/watch?v=_mO2wF_1rV0)
   * For the official documentation check out: [Getting Started with Atlas](https://docs.atlas.mongodb.com/getting-started/) guide to create a cloud hosted MongoDB database.
@@ -23,6 +23,8 @@ API tests with Postman
 
 `GET /api/book`
 
+* This should be intially empty.
+* Try POSTing the following two books to the `/api/book` endpoint:
 
 `POST /api/book`
 ```json
@@ -42,6 +44,7 @@ API tests with Postman
 ```
 
 `GET /api/book`
+* Now you should get a JSON response of the two books you just created in the database
 
 
 Made by [Glitch](https://glitch.com/)
