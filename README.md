@@ -1,6 +1,6 @@
 # INFSCI2560 Activity 9
 
-Connect this application to a MongoDB instance and then use [Postman](https://www.postman.com) or [Hoppscotch](https://hoppscotch.io) to insert some books. Remix this Glitch Express.js and Mongoose to connect to a [Mongo Atlas](https://www.mongodb.com/cloud/atlas) database.
+Connect this application to a MongoDB instance and then use [Postman](https://www.postman.com) or [Hoppscotch](https://hoppscotch.io) to insert some books. Remix this Glitch project that uses Express.js and Mongoose to connect to your [Mongo Atlas](https://www.mongodb.com/cloud/atlas) database.
 
 
 ## Steps
@@ -17,7 +17,9 @@ Once you have created your MongoDb database in the cloud, edit the `.env` file a
 * Database - This is the name of the database you created in the cloud.
 
 
-To test your application, you can use [Postman](https://www.postman.com) or Hoppscotch](https://hoppscotch.io) to insert some books. Try the API calls below to see if you can add and list the books in your database.
+To test your application, you can use [Postman](https://www.postman.com) or [Hoppscotch](https://hoppscotch.io) to insert some books. Try the API calls below to see if you can add and list the books in your database.
+
+**NOTE**: If you use Hoppscotch, you need to turn on the proxy in the [settings](https://hoppscotch.io/settings/)
 
 API tests with Postman
 
