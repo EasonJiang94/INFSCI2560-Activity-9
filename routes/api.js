@@ -21,6 +21,7 @@ router.get("/:bookId", function(req, res){
 
 //CREATE
 router.post('/', function(req, res){
+  console.log("new book", req.body);
   let book = new Book(req.body);
   book.save();
   res.status(201).send(book);
