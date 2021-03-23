@@ -8,7 +8,7 @@ const Book = require("../barf/book");
 // RETREIVE all books
 router.get("/", function(req,res){
   Book.find({}, function (err, book_list){
-    res.render("index", {books:book_list});
+    res.render("index.ejs", {books:book_list});
   });
 });
 
