@@ -10,4 +10,4 @@ const BookSchema = new Schema(
 );
 
 // Export model
-module.exports = mongoose.model("novel", BookSchema);
+module.exports = mongoose.model("book", BookSchema);
