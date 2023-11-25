@@ -16,7 +16,7 @@
     "ejs": "^2.0"
   },
   "engines": {
-    "node": ">=16.20.1"
+    "node": "16"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"

@@ -15,7 +15,7 @@ const mongoDB = ("mongodb+srv://"+
                  +process.env.HOST+
                  "/"
                  +process.env.DATABASE);
-mongoose.connect(mongoDB, {useNewUrlParser: true, retryWrites: true});
+mongoose.connect(mongoDB, {retryWrites: true});
 
 const app = express();
 app.use(bodyParser.json());

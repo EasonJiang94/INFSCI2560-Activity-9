@@ -6,18 +6,31 @@ const router = express.Router()
 const Book = require("../barf/book");
 
 // RETREIVE all books
-router.get("/", function(req,res){
-  Book.find({}, function (err, book_list){
-    res.json(book_list);
-  });
+router.get("/", function(req, res){
+  Book.find({})
+    .then(book_list => {
+      res.json(book_list);
+    })
+    .catch(err => {
+      res.status(500).send(err);
+    });
 });
 
 // RETRIEVE a specific book
 router.get("/:bookId", function(req, res){
-  Book.findById(req.params.bookId, function(err, book) {
-    res.json(book)
-  });
+  Book.findById(req.params.bookId)
+    .then(book => {
+      if (book) {
+        res.json(book);
+      } else {
+        res.status(404).send("Book not found");
+      }
+    })
+    .catch(err => {
+      res.status(500).send(err);
+    });
 });
+
 
 //CREATE
 router.post('/', function(req, res){
