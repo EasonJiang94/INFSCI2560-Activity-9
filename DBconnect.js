@@ -1,14 +1,13 @@
 let mongoose = require('mongoose');
 
-/*let mongoDB =  ("mongodb+srv://"+
+let mongoDB =  ("mongodb+srv://"+
                  process.env.USERNAME+
                  ":"
                  +process.env.PASSWORD+
                  "@"
                  +process.env.HOST+
                  "/"
-                 +process.env.DATABASE);*/
-let mongoDB='mongodb+srv://Sam:n6vorfzCrOor3v3c@cluster0.wdpbhei.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+                 +process.env.DATABASE);
 
 const connectDB = async () => {
     try {

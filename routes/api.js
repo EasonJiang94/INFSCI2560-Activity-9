@@ -41,8 +41,8 @@ router.post('/', function(req, res){
 });
 
 //UPDATE
-router.put("/:bookId", function(req, res) {
-  Book.findById(req.params.bookId, function(err, book) {
+router.put("/:bookId", async function(req, res) {
+ await Book.findById(req.params.bookId, function(err, book) {
     book.title = req.body.title;
     book.author = req.body.author;
     book.save();
