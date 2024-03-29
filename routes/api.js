@@ -17,8 +17,8 @@ router.get("/", async function(req, res){
 });
 
 // RETRIEVE a specific book
-router.get("/:bookId",function(req, res){
-  Book.findById(req.params.bookId)
+router.get("/:bookId",async function(req, res){
+ await Book.findById(req.params.bookId)
     .then(book => {
       if (book) {
         res.json(book);
