@@ -42,18 +42,18 @@ await  book.save();
 
 //UPDATE
 router.put("/:bookId", async function(req, res) {
- await Book.findById(req.params.bookId, function(err, book) {
+ await Book.findById(req.params.bookId, async function(err, book) {
     book.title = req.body.title;
     book.author = req.body.author;
-    book.save();
+await    book.save();
     res.json(book);
   });
 });
 
 //DELETE
 router.delete("/:bookId", async function(req, res){
- await Book.findById(req.params.bookId, function(err, book) {
-    book.remove(function(err){
+ await Book.findById(req.params.bookId, async function(err, book) {
+  await  book.remove(function(err){
         if(err){
           res.status(500).send(err);
         }
