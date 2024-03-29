@@ -6,8 +6,8 @@ const router = express.Router()
 const Book = require("../barf/book");
 
 // RETREIVE all books
-router.get("/", function(req, res){
-  Book.find({})
+router.get("/", async function(req, res){
+ await Book.find({})
     .then(book_list => {
       res.json(book_list);
     })

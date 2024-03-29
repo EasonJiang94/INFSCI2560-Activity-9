@@ -17,7 +17,7 @@ const mongoDB = ("mongodb+srv://"+
                  +process.env.DATABASE);
 console.log(mongoDB);
 console.log("mongodb+srv://alawyah:<password>@cluster0.wdpbhei.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
-mongoose.connect(mongoDB, {retryWrites: true,appName:''});
+mongoose.connect(mongoDB, {retryWrites: true});
 
 const app = express();
 app.use(bodyParser.json());
