@@ -4,20 +4,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
+const { connectDB } = require('./DBconnect');
 
-// Establish a connection with the Mongo Database
-// Get the username, password, host, and databse from the .env file
-const mongoDB = ("mongodb+srv://"+
-                 process.env.USERNAME+
-                 ":"
-                 +process.env.PASSWORD+
-                 "@"
-                 +process.env.HOST+
-                 "/"
-                 +process.env.DATABASE);
-console.log(mongoDB);
-console.log("mongodb+srv://alawyah:<password>@cluster0.wdpbhei.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
-mongoose.connect(mongoDB, {retryWrites: true});
+// Connect to the DB
+connectDB();
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -38,3 +29,4 @@ app.use("/api/book", apiRouter);
 const listener = app.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);
 });
+
