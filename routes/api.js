@@ -33,10 +33,10 @@ router.get("/:bookId",function(req, res){
 
 
 //CREATE
-router.post('/', function(req, res){
+router.post('/', async function(req, res){
   console.log("new book", req.body);
   let book = new Book(req.body);
-  book.save();
+await  book.save();
   res.status(201).send(book);
 });
 
@@ -51,8 +51,8 @@ router.put("/:bookId", async function(req, res) {
 });
 
 //DELETE
-router.delete("/:bookId", function(req, res){
-  Book.findById(req.params.bookId, function(err, book) {
+router.delete("/:bookId", async function(req, res){
+ await Book.findById(req.params.bookId, function(err, book) {
     book.remove(function(err){
         if(err){
           res.status(500).send(err);
