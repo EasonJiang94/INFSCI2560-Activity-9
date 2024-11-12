@@ -36,7 +36,12 @@ router.get("/:bookId",async function(req, res){
 router.post('/', async function(req, res){
   console.log("new book", req.body);
   let book = new Book(req.body);
-await  book.save();
+try {
+  await  book.save();
+    } catch(err){
+      
+      console.log(err);
+    }
   res.status(201).send(book);
 });
 
