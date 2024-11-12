@@ -33,16 +33,22 @@ router.get("/:bookId",async function(req, res){
 
 
 //CREATE
-router.post('/', async function(req, res){
+router.post('/', async function(req, res) {
   console.log("new book", req.body);
-  let book = new Book(req.body);
-try {
-  await  book.save();
-    } catch(err){
-      
-      console.log(err);
-    }
-  res.status(201).send(book);
+
+  try {
+    let book = new Book(req.body);
+
+    // Await the save operation to ensure the book is saved before continuing
+    await book.save();
+
+    // Send back the saved book as a response
+    res.status(201).send(book);
+  } catch (error) {
+    // Handle potential errors (e.g., validation or database issues)
+    console.error('Error saving book:', error);
+    res.status(500).send({ error: 'Failed to save the book' });
+  }
 });
 
 //UPDATE
